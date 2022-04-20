@@ -1,0 +1,620 @@
+* {
+  box-sizing: border-box;
+}
+
+nav.header{
+  background: linear-gradient(rgba(31, 31, 83, 0.1), rgba(23, 23, 70, 0.8)), url(../assets/header-banner.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.container-fluid{
+  padding: 15px;
+}
+
+nav.header i.fa-bars-staggered{
+  float: right;
+}
+
+nav.header i{
+  background-color: rgba(23, 23, 70, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.header h2{
+  margin-top: 120px;
+  padding-bottom: 90px;
+  font-size: 1.6rem;
+  font-family: header-text;
+  width: 50%;
+}
+
+.header h2 a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.search-container{
+  background-color: #ffffff;
+  border: 2px solid rgb(231, 224, 224);
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  margin: auto;
+}
+
+.search-container input{
+  outline: none;
+  border: none;
+  width: 77%;
+}
+
+.search-container button, nav.header button{
+  border: none;
+  background: none;
+}
+
+.search-container i{
+  color: #828588;
+}
+
+section.body{
+  background-color: #fff;
+  margin-top: -70px;
+  padding: 25px;
+  border-radius: 60px 60px 0 0;
+  
+}
+
+.suggestions{
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.suggestions .view-all{
+  float: right;
+  color: #959ca8;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+}
+
+.suggestions h4{
+  color: rgb(22, 22, 126);
+  font-family: header-text;
+  display: inline;
+}
+
+.houseSlide-box{
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-family: house-slide;
+}
+
+.img-slide{
+  height: 250px;
+}
+
+.img-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.suggestions .detail-box{
+  padding: 10px 10px;
+  margin: auto;
+}
+
+.detail-box .price, .detail-box i{
+color: red;
+font-weight: 700;
+}
+
+.detail-box h5{
+  color: rgb(22, 22, 126);
+  margin-bottom: -2px;
+  font-size: 1rem;
+  font-family: slide-name;
+}
+
+.amount .rating{
+  float: right;
+}
+
+.favorite{
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 1rem;
+  position: absolute;
+  top: 20px;
+  left: 200px;
+}
+
+section.all-view{
+  display: none;
+}
+
+section i.fa-arrow-circle-left{
+  margin-top: 50px;
+  display: block;
+}
+
+div.learn-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.learn-flex .houseSlide-box{
+  width: 120px;
+}
+
+.learn-flex .houseSlide-box .img-slide{
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.learn-flex .houseSlide-box ,.detail-box .amount{
+  font-size: 0.5rem;
+ padding: 5px;
+}
+
+learn-flex .houseSlide-box ,.detail-box .amount, h5{
+  font-size: 0.8rem;
+}
+
+nav.footer{
+  margin-top: 30px;
+  background-color: #f5f6fa;
+  padding: 10px;
+  font-size: 1.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+
+/* table css */
+
+.record-header {
+  text-align: center;
+}
+
+.select-category-box{
+  width: 40%;
+  margin: 5px auto;
+}
+.students-name-select,
+.select-container select{
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  border: 1px solid blue;
+  font-size: 1em;
+  font-family: 'Times New Roman', Times, serif;
+  background: transparent;
+  background-color: rgb(247, 243, 240);
+  outline: none;
+  border-radius: 5px;
+
+}
+
+table,
+tr,
+td,
+th {
+  border: 2px solid blue;
+  margin: 10px;
+}
+
+/* wheel And Box container */
+.boxAndWheelDiv{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* writeup box style */
+
+.write-up {
+  width: 400px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  padding: 50px;
+  background-color: blue;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.2s, height 0.6s;
+  position: relative;
+}
+
+.box.opening {
+  width: 400px;
+  height: 500px;
+  color: white;
+}
+
+.box h2 {
+  position: absolute;
+  width: 100%;
+  font-size: 100px;
+  transform: translateX(-200%);
+  transition: all 0.5s;
+  top: 0;
+}
+
+.box p {
+  position: absolute;
+  width: 100%;
+  transform: translateX(300%);
+  transition: all 0.5s;
+  bottom: 0;
+}
+
+.box.open>* {
+  transform: translateX(0%);
+}
+
+/* spin-the-wheel styles */
+
+.wheel-body,
+.write-up {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  clear: both;
+}
+
+/* Flip Card style */
+
+.card {
+  margin: 60px 10px;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+  border: none;
+}
+
+.inner-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.inner-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.front-face {
+  background-image: linear-gradient(to bottom right, red, yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-face h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.back-face {
+  background-color: blue;
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+}
+
+.card-header {
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card-header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0 0 50% 0;
+  background-image: linear-gradient(to bottom left, red, yellow);
+
+}
+
+.header-img {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  object-fit: cover;
+  border: 5px solid #fff;
+}
+
+.card-header h2{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.card-body{
+  padding: 30px;
+}
+
+.card-body h3{
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 600;
+
+}
+
+.card-body p{
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+/* wheel style */
+
+.wheel-container {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 15px solid rgb(171, 219, 38);
+  position: relative;
+  overflow: hidden;
+  transition: 5s;
+}
+
+.wheel-container div {
+  height: 50%;
+  width: 200px;
+  position: absolute;
+  clip-path: polygon(100% 0, 50% 100%, 0 0);
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 135px;
+
+}
+
+.wheel-container .bassey {
+  background-color: red;
+  left: 50%;
+}
+
+.wheel-container .bright {
+  background-color: orange;
+  transform: rotate(40deg);
+}
+
+.wheel-container .moses {
+  background-color: yellow;
+  transform: rotate(80deg);
+}
+
+.wheel-container .emori {
+  background-color: green;
+  transform: rotate(120deg);
+}
+
+.wheel-container .ekereObong {
+  background-color: blue;
+  transform: rotate(160deg);
+}
+
+.wheel-container .joy {
+  background-color: pink;
+  transform: rotate(200deg);
+}
+
+.wheel-container .alfred {
+  background-color: violet;
+  transform: rotate(240deg);
+}
+
+.wheel-container .eminent {
+  background-color: yellowgreen;
+  transform: rotate(280deg);
+}
+
+.wheel-container .abraham {
+  background-color: turquoise;
+  transform: rotate(320deg);
+}
+
+.arrow {
+  position: absolute;
+  top: 0px;
+  left: 52%;
+  transform: translateX(-50%);
+  color: rgb(97, 28, 28);
+  font-size: 60px;
+}
+
+#spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: rgb(182, 125, 55);
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+/* ####Styled Select box###### */
+h2{
+  margin: 16px;
+}
+
+.selected{
+  background: #2f3648;
+  border-radius: 8px;
+  color: #f5f6fa;
+  position: relative;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.select-box{
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+}
+
+.select-box .options-container{
+  background: #2f3648;
+  color: #f5f6fa;
+  max-height: 0;
+  width: 100%;
+  transition: all 0.4s;
+  opacity: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  order: 1;
+}
+
+.select-box .options-container.active{
+  max-height: 100px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.select-box .options-container::-webkit-scrollbar{
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb{
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options{
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-box .options:hover{
+  background: #414b57;
+}
+
+.select-box label{
+  cursor: pointer;
+}
+
+@font-face{
+  font-family: header-text;
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face{
+  font-family: house-slide;
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face{
+  font-family: slide-name;
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+
+@media screen and (max-width: 480px) {
+ .wheel-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .wheel-container div {
+    height: 50%;
+    width: 101px;
+    font-size: 0.6em;
+    left: 84px;
+  }
+
+  .wheel-container .moses {
+    font-size: 0.8em;
+  }
+
+  .wheel-container .emori {
+    color: whitesmoke;
+    font-size: 0.8em;
+  }
+
+  .wheel-container .ekereObong {
+    color: white;
+    font-size: 0.8em;
+  }
+
+  .wheel-container .joy {
+    color: whitesmoke;
+
+  }
+
+  .wheel-container .alfred {
+    font-size: 0.8em;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 0;
+  }
+
+  #spin {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #fff;
+  }
+}
