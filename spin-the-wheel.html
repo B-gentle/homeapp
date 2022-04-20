@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2 class="record-header">B.S.T. Record Sheet</h2>
+
+  <h3>Course Teachers Names</h3>
+  <ul>
+    <li data-time="1:30">Alfred</li>
+    <li data-time="5:17">Bash</li>
+    <li data-time="2:00">Bright</li>
+    <li data-time="5:37">Lizzy</li>
+    <li data-time="9:17">Victor</li>
+    <li data-time="5:45">Peculiar</li>
+  </ul>
+
+  <div class="select-category-box">
+    <p>Select Class Category</p>
+    <div class="select-container">
+      <select>
+        <option value="">JSS 1A</option>
+        <option value="">JSS 1B</option>
+        <option value="">JSS 1C</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="students-record">
+    <table>
+      <tr>
+        <th>S/N</th>
+        <th>Students Name</th>
+        <th>C.A.T. 1</th>
+        <th>C.A.T. 2</th>
+        <th>C.A.T. 3</th>
+        <th>Exams</th>
+        <th>Total</th>
+      </tr>
+
+      <tr>
+        <th>1</th>
+        <th>
+          <select class="students-name-select">
+            <option disabled selected value="">Select Student's Name</option>
+            <option value="">Aboh Fortune David</option>
+            <option value="">Adeniyi Emmanuella</option>
+            <option value="">Amadi Divine</option>
+            <option value="">Ani Benjamin</option>
+            <option value="">Anthony Goodluck</option>
+          </select>
+        </th>
+        <th>C.A.T. 1</th>
+        <th>C.A.T. 2</th>
+        <th><a href="index.html">Emori's UI</a></th>
+        <th>Exams</th>
+        <th>Total</th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="boxAndWheelDiv">
+    <div class="write-up">
+      <div class="box">
+        <h1>Select Our next meetup Host</h1>
+        <p>Spin the wheel to select our next meetup host.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="inner-card">
+        <div class="card-face front-face">
+          <h2>Developer Card</h2>
+        </div>
+        <div class="card-face back-face">
+          <div class="card-content">
+            <div class="card-header">
+              <img src="assets/header-img.jpg" alt="user-image" class="header-img">
+              <h2>Meet The CEO</h2>
+            </div>
+            <div class="card-body">
+              <h3>BeeTech</h3>
+              <p>CEO BeeTech Int. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Eum ad ex harum commodi illum, impedit nam laboriosam.
+                Atque velit officiis quis debitis blanditiis facere quasi
+                oloribus quos? Voluptatem, at nisi?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wheel-body">
+    <button id="spin">Spin</button>
+    <span class="arrow">&#8595</span>
+    <div class="wheel-container">
+      <div class="bassey">Victor</div>
+      <div class="bright">Bright Eyo</div>
+      <div class="moses">Moses</div>
+      <div class="emori">Emori</div>
+      <div class="ekereObong">Ekere</div>
+      <div class="joy">Joy Ante</div>
+      <div class="alfred">Alfred</div>
+      <div class="eminent">Eminent</div>
+      <div class="abraham">Lizzy</div>
+    </div>
+  </div>
+
+
+  <div class="select-box">
+    <div class="options-container active">
+      <div class="options">
+        <input type="radio" class="radio" id="bash" name="subject-teacher">
+        <label for="bash">Bash</label>
+      </div>
+      <div class="options">
+        <input type="radio" class="radio" id="bright" name="subject-teacher">
+        <label for="bright">Bright</label>
+      </div>
+      <div class="options">
+        <input type="radio" class="radio" id="lizzy" name="subject-teacher">
+        <label for="lizzy">Lizzy</label>
+      </div>
+      <div class="options">
+        <input type="radio" class="radio" id="yeko" name="subject-teacher">
+        <label for="yeko">Yeko</label>
+      </div>
+    </div>
+    <div class="selected">
+        <h2>Select Developer</h2>
+      </div>
+  </div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
